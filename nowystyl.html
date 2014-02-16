@@ -1,0 +1,20 @@
+---
+layout: files
+title: BR meble
+---
+
+    <div class="row">
+        {% directory path: files/nowystyl %}
+        <div class="col-xs-6 col-md-6">
+            <a href="{{ file.url }}" target='_blank'>
+                <div class="thumbnail">
+                        <img src="images/pdf_icon.png" style="width:140px;" >
+                        <div class="caption" align="middle">
+                            {{ file.title }}
+                        </div>
+                </div>
+            </a>
+        </div>
+        {% enddirectory %}
+    </div>
+

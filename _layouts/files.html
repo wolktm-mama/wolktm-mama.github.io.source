@@ -1,0 +1,42 @@
+---
+layout: files
+---
+{% include head.html %}
+<body data-spy="scroll" data-target="#top-navigation">
+    <!-- PAGE START -->
+    <div id="page">
+        <!-- MAIN NAV START -->
+        <nav id="top-navigation" class="navbar navbar-default navbar-transparent navbar-fixed-top" role="navigation">
+            <div class="navbar-header">
+                <button id="menu-mobile" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <!-- LOGO COMES HERE -->
+
+                <img src="images/logo.png" style="padding: 5px; width: 70%;">
+            </div>
+
+            <!-- NAV ITEMS START -->
+            <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="../#header">Start</a></li>
+                    <li><a href="../#about">O nas</a></li>
+                    <li><a href="../#services">Oferta</a></li>
+                    <li><a href="../#work">Portfolio</a></li>
+                    <li><a href="../#clients">Co o nas mówią</a></li>
+                    <li><a href="../#team">Produkty</a></li>
+                    <li><a href="../#contact">Kontakt</a></li>
+                </ul>
+            </div>
+            <!-- NAV ITEMS END -->
+        </nav>
+        <!-- HOME START -->
+        <header id="header" >
+            <div class="container"  style="margin-top: 5%;">
+
+
+                {{ content }}
+            </div>
+        </header>
+
+{% include foot.html %}
